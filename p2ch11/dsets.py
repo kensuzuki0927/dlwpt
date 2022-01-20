@@ -78,7 +78,7 @@ def getCandidateInfoList(requireOnDisk_bool=True):
                 candidateCenter_xyz,
             ))
 
-    candidateInfo_list.sort(reverse=True)
+    candidateInfo_list.sort(reverse=False) # CHANGED
     return candidateInfo_list
 
 class Ct:

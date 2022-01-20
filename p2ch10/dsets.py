@@ -30,7 +30,7 @@ CandidateInfoTuple = namedtuple(
     'isNodule_bool, diameter_mm, series_uid, center_xyz',
 )
 
-#@functools.lru_cache(1)
+@functools.lru_cache(1)
 def getCandidateInfoList(requireOnDisk_bool=True):
     # We construct a set with all series_uids that are present on disk.
     # This will let us use the data, even if we haven't downloaded all of
